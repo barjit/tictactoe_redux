@@ -3,7 +3,6 @@ require "spec_helper"
 
 module TictactoeRedux
   RSpec.describe Cell do
-
     context "#initialize" do
       it "initializes with a default value of ''" do
         cell = Cell.new
@@ -15,7 +14,7 @@ module TictactoeRedux
         expect(cell.value).to eq 'X'
       end
 
-      it "can be initialized with an inputted value, lile 'O'" do
+      it "can be initialized with an inputted value, like 'O'" do
         cell = Cell.new('O')
         expect(cell.value).to eq 'O'
       end

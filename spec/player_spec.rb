@@ -2,7 +2,6 @@
 require "spec_helper"
 
 module TictactoeRedux
-
   RSpec.describe Player do
     context "#initialize" do
       it "raises an error if initialized with empty Hash" do

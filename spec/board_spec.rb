@@ -45,5 +45,26 @@ module TictactoeRedux
         expect(game_board.get_cell(0, 1).value).to eq 'woof'
       end
     end
+# .stub method is not working, looking for a workaround.
+    # context '#game_over?' do
+    #   it 'returns :winner if winner? is true' do
+    #     game_board = Board.new
+    #     game_board.stub(:winner?) { true }
+    #     expect(game_board.game_over).to eq :winner
+    #   end
+    #
+    #   it 'returns :draw if draw? is true' do
+    #     game_board = Board.new
+    #     game_board.stub(:draw?) { true }
+    #     expect(game_board.game_over).to eq :draw
+    #   end
+    #
+    #   it 'returns false if both winner? and draw? are false' do
+    #     game_board = Board.new
+    #     game_board.stub(:winner?) { false }
+    #     game_board.stub(:draw?) { false }
+    #     expect(game_board.game_over).to be_false
+    #   end
+    # end
   end
 end
